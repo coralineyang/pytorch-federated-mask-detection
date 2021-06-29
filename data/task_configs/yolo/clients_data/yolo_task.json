@@ -1,0 +1,11 @@
+{
+    "model_name": "Yolo",
+    "model_config": "data/task_configs/yolo/clients_data/yolo_model.json",
+    "log_dir": "yolo/clients_data",
+    "model_path": "yolo_model.pkl",
+    "MIN_NUM_WORKERS": 3,
+    "MAX_NUM_ROUNDS": 1000,
+    "NUM_TOLERATE": -1,
+    "NUM_CLIENTS_CONTACTED_PER_ROUND": 3,
+    "ROUNDS_BETWEEN_VALIDATIONS": 1000
+}
