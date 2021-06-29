@@ -1,0 +1,45 @@
+ <!--
+Copyright (c) 2018 ml5
+
+This software is released under the MIT License.
+https://opensource.org/licenses/MIT
+-->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>yyn's fl mask detection</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body onresize="windowResized()">
+  <h1 class='title'>Federated Mask Detection Demo </h1>
+<!--  <h1 class='title'>This model is trained with Federated Learning.</h1>-->
+  <h5 class='title' id='tips'> 
+    This demo shows the results of a model for mask detection which trained with Federated Learning.
+  <div id="container">
+    <div class="text-container">
+      <p id="instruction" class="green-color">
+      <button id="uploader-btn" onClick="clickUploader()">Upload image</button>
+
+      <p id="warning" class="result-color"></p>
+
+      <input name="imgFile" type="file" id="fileUploader" accept="image/*" onChange="handleFiles()">
+
+      <p class="result-color">
+        The result is:
+      </p>
+    </div>
+    <div id="image-container">
+      <img src="images/demo1.jpg" id="image" class="center">
+    </div>
+    <div id="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
